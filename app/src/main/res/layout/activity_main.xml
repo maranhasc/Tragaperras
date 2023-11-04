@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="30dp"
+    android:background="@drawable/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llfichas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/tragaperras"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivficha1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/campana" />
+
+        <ImageView
+            android:id="@+id/ivficha2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="24dp"
+            app:srcCompat="@drawable/campana" />
+
+        <ImageView
+            android:id="@+id/ivficha3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/campana" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="avance"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llfichas"
+        app:srcCompat="@drawable/boton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
